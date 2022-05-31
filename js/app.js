@@ -38,10 +38,6 @@ const knit = document.querySelector("#knit");
 
 class App {
   constructor() {
-    /*
-     * set initial app properties and start the main function
-     **/
-
     // get the canvas element from the html body
     this.canvas = document.querySelector("#stage");
 
