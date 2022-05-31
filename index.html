@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>3D Sneaker</title>
+</head>
+
+<body>
+    <div class="cotainer">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="brand">HSNKRS</h1>
+                <h2>3D Sneaker Viewer and Customization</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div class="action-bar">
+                    <nav class="navbar-top">
+                        <h1 class="heading">Controllers</h1>
+                        <ul id="controllers">
+                            <li class="nav-item">
+                                <a href="#" id="reset-animations">Reset</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="rotate">Rotate</a>
+                            </li>
+                        </ul>
+
+                        <h1 class="heading">Personalize</h1>
+                        <ul id="personalize">
+                            <li class="nav-item">
+                                <a href="#" id="heal-guard">Heal Guard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="toe-guard">Toe Guard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="sole">Sole</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="sole-foam">Sole Foam</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="right-swoosh">Right Swoosh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="left-swoosh">Left Swoosh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="laces">Laces</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="tongue-front">Tongue Front</a>
+                            </li>
+                        </ul>
+
+                        <div class="color-picker" id="swoosh-colors">
+                            <h1 class="heading">Swoosh</h1>
+                            <ul>
+                                <li class="color-item pomegranate-color" id="pomegranate-swoosh"></li>
+                                <li class="color-item shakespeare-color" id="shakespeare-swoosh"></li>
+                                <li class="color-item haze-green-color" id="haze-green-swoosh"></li>
+                                <li class="color-item plum-color" id="plum-swoosh"></li>
+                                <li class="color-item confetti-color" id="confetti-swoosh"></li>
+                                <li class="color-item tahiti-gold-color" id="tahiti-gold-swoosh"></li>
+                                <li class="color-item white-color" id="white-swoosh"></li>
+                                <li class="color-item black-color" id="black-swoosh"></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="color-picker" id="heal-guard-colors">
+                            <h1 class="heading">Heal Guard</h1>
+                            <ul>
+                                <li class="color-item pomegranate-color" id="pomegranate-healguard"></li>
+                                <li class="color-item shakespeare-color" id="shakespeare-healguard"></li>
+                                <li class="color-item haze-green-color" id="haze-green-healguard"></li>
+                                <li class="color-item plum-color" id="plum-healguard"></li>
+                                <li class="color-item confetti-color" id="confetti-healguard"></li>
+                                <li class="color-item tahiti-gold-color" id="tahiti-gold-healguard"></li>
+                                <li class="color-item white-color" id="white-healguard"></li>
+                                <li class="color-item black-color" id="black-healguard"></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="color-picker" id="toe-guard-colors">
+                            <h1 class="heading">Toe Guard</h1>
+                            <ul>
+                                <li class="color-item pomegranate-color" id="pomegranate-toeguard"></li>
+                                <li class="color-item shakespeare-color" id="shakespeare-toeguard"></li>
+                                <li class="color-item haze-green-color" id="haze-green-toeguard"></li>
+                                <li class="color-item plum-color" id="plum-toeguard"></li>
+                                <li class="color-item confetti-color" id="confetti-toeguard"></li>
+                                <li class="color-item tahiti-gold-color" id="tahiti-gold-toeguard"></li>
+                                <li class="color-item white-color" id="white-toeguard"></li>
+                                <li class="color-item black-color" id="black-toeguard"></li>
+                            </ul>
+                        </div>
+
+                        <div class="color-picker" id="laces-colors">
+                            <h1 class="heading">Laces</h1>
+                            <ul>
+                                <li class="color-item pomegranate-color" id="pomegranate-laces"></li>
+                                <li class="color-item shakespeare-color" id="shakespeare-laces"></li>
+                                <li class="color-item haze-green-color" id="haze-green-laces"></li>
+                                <li class="color-item plum-color" id="plum-laces"></li>
+                                <li class="color-item confetti-color" id="confetti-laces"></li>
+                                <li class="color-item tahiti-gold-color" id="tahiti-gold-laces"></li>
+                                <li class="color-item white-color" id="white-laces"></li>
+                                <li class="color-item black-color" id="black-laces"></li>
+                            </ul>
+                        </div>
+
+                        <div class="color-picker" id="sole-colors">
+                            <h1 class="heading">Sole</h1>
+                            <ul>
+                                <li class="color-item white-color" id="white-sole"></li>
+                                <li class="color-item black-color" id="black-sole"></li>
+                            </ul>
+                        </div>
+
+                        <div class="color-picker" id="tongue-front-colors">
+                            <h1 class="heading">Tongue Front</h1>
+                            <ul>
+                                <li class="color-item white-color" id="white-tongue-front"></li>
+                                <li class="color-item black-color" id="black-tongue-front"></li>
+                            </ul>
+                        </div>
+
+                        <!-- <div id="texture-box">
+                            <h1 class="heading">Textures</h1>
+
+                            <div id="textures">
+                                <div class="thumbnail" id="tiger-fur">
+                                    <img src="./img/tiger-fur-texture.jpg" alt="">
+                                </div>
+                                <div class="thumbnail" id="panther-fur">
+                                    <img src="./img/seamless-panther-fur-texture.jpg" alt="">
+                                </div>
+                                <div class="thumbnail" id="denim">
+                                    <img src="./img/denim.jpg" alt="" srcset="">
+                                </div>
+                                <div class="thumbnail" id="knit"><img src="./img/knit2.jpg" alt="" srcset=""></div>
+                            </div>
+                        </div> -->
+
+                    </nav>
+
+                </div>
+            </div>
+            <div class="col-10">
+                <canvas id="stage"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>

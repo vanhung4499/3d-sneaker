@@ -1,0 +1,232 @@
+/* RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Rajdhani:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    letter-spacing: .1em;
+    overflow: hidden;
+    background-color: #282828;
+    color: #e7e7e7;
+}
+
+a {
+    text-decoration: none;
+    color: #e26a6a;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.btn {
+    background-color: #e26a6a;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding: .3rem 2.3rem;
+}
+
+#stage {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* TYPOGRAPHY */
+
+.brand {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3em;
+    text-shadow: 3px 3px .1rem #e26a6a;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.sidebar > .sidebar-heading > .tag {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: .9em;
+}
+
+.sidebar > .sidebar-footer {
+    margin-bottom: 2rem;
+}
+
+.sidebar > .sidebar-footer > .price-tag {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.4em;
+    margin: .5rem 0;
+    padding: 1rem 0;
+}
+
+
+
+/* ACTIONBAR */ 
+
+.action-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem 3rem;
+    /* font-size: .9em; */
+}
+
+.heading {
+    margin: 2rem 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px .1rem #e26a6a;
+    /* font-family: 'Nanum Pen Script', cursive; */ 
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.nav-item {
+    margin: 1rem 0;
+    padding-right: .5rem;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.navbar-top .nav-item:hover {
+    padding-left: 0.5rem;
+    border-left: 1px solid #e26a6a;
+}
+
+.action-bar {
+    background: #252525;
+}
+
+.action-bar > .action-bar-footer {
+    margin-bottom: 2rem;
+}
+
+.display {
+    margin-top: 1rem;
+    border: 1px solid #e7e7e7;;
+    background: #e26a6a;
+    width: 100%;
+    height: 13rem;
+    transition: background 100ms;
+}
+
+.color-picker ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.color-picker .color-item {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: .5rem;
+    transition: transform 0.3s;
+}
+
+.color-item:hover {
+    transform: scale(1.1)
+}
+
+#heal-guard-colors,
+#toe-guard-colors,
+#swoosh-colors,
+#laces-colors,
+#sole-colors {
+    display: none;
+}
+
+#pomegranate-healguard,
+#pomegranate-toeguard, 
+#pomegranate-swoosh,
+#pomegranate-laces,
+.pomegranate-color {
+    background-color: rgb(240, 52, 52);
+}
+
+#shakespeare-healguard,
+#shakespeare-toeguard,
+#shakespeare-swoosh,
+#shakespeare-laces,
+.shakespeare-color {
+    background-color: rgb(82, 179, 217);
+}
+
+#haze-swoosh,
+#haze-healguard,
+#green-haze-toeguard,
+#haze-sole,
+#haze-solefoam,
+#haze-laces,
+.haze-green-color {
+    background-color: rgb(1, 152, 117);
+}
+
+#plum-swoosh,
+#plum-toeguard,
+#plum-laces,
+.plum-color {
+    background-color: rgb(145, 61, 136);
+}
+
+#confetti-swoosh,
+#confetti-toeguard,
+#confetti-laces,
+.confetti-color {
+    background-color: rgb(233, 212, 96);
+}
+
+#tahiti-gold-swoosh,
+#tahiti-gold-toeguard,
+#tahiti-gold-laces,
+.tahiti-gold-color {
+    background-color: rgb(232, 126, 4);
+}
+
+.white-color {
+    background-color: white;
+}
+
+.black-color {
+    background-color: black;
+}
+
+#texture-box {
+    display: none;
+}
+
+#textures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+
+#textures .thumbnail {
+    border: 2px solid #e7e7e7;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.thumbnail > img {
+    max-width: 100%;
+}
+
