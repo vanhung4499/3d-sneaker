@@ -31,6 +31,7 @@ const swooshColors = document.querySelector("#swoosh-colors");
 const lacesColors = document.querySelector("#laces-colors");
 const soleColors = document.querySelector("#sole-colors");
 const tongueFrontColors = document.querySelector("#tongue-front-colors");
+
 const tigerFur = document.querySelector("#tiger-fur");
 const pantherFur = document.querySelector("#panther-fur");
 const denim = document.querySelector("#denim");
@@ -60,23 +61,12 @@ class App {
     });
   }
 
-  materialPicker() {}
+  // materialPicker() {}
 
   goToStage() {
     let scene = new Scene(this.engine);
-    const light = new HemisphericLight(
-      "light",
-      new Vector3(-10, 20, 10),
-      scene
-    );
-    const camera = new ArcRotateCamera(
-      "camera",
-      Tools.ToRadians(-60),
-      Tools.ToRadians(60),
-      70,
-      Vector3.Zero(),
-      scene
-    );
+    const light = new HemisphericLight("light", new Vector3(-10, 20, 10), scene);
+    const camera = new ArcRotateCamera("camera", Tools.ToRadians(-60), Tools.ToRadians(60), 70, Vector3.Zero(), scene);
 
     scene.clearColor = new Color4(0, 0, 0, 0.0000000000000001);
     camera.attachControl(this.canvas, true);
@@ -190,7 +180,6 @@ class App {
       const white = document.querySelector("#white-swoosh");
       const black = document.querySelector("#black-swoosh");
       
-
       textureManager.applyColor(pomegranate, "swoosh_right", scene, "pomegranate");
       textureManager.applyColor(shakespeare, "swoosh_right", scene, "shakespeare");
       textureManager.applyColor(hazeGreen, "swoosh_right", scene, "haze-green");
